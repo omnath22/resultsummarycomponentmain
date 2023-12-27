@@ -1,0 +1,119 @@
+@font-face {
+    font-family:'WorkSans';
+    font-weight: 400 600 700;
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
+
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Lightpink: hsl(275, 100%, 97%);
+--Grayishpurple: hsl(292, 16%, 49%);
+--Darkpurple: hsl(292, 42%, 14%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{margin:0;padding: 0;
+    font-family: 'WorkSans';
+}
+
+.topsection{
+    min-height: 35vh;
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+ 
+}
+.bottomsection{
+    height:75vh;
+    background-color: var(--Lightpink);
+}
+.main{
+    width:500px;
+
+    position: absolute;
+    padding:10px;
+    background-color: var(--White);
+    border-radius: 18px;
+    top: 50px;
+    left: 416px;
+}
+.head img{
+    height:34px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.head {
+    margin-top:10px;
+    font-size: 3rem;
+    font-weight: 700;
+    color:var(--Darkpurple);
+}
+.headbelow{
+    margin-top:20px;
+    margin-left: 20px;
+}
+.question{
+    font-size: 1rem;
+    color:var(--Darkpurple);
+    font-weight: 600;
+    position: relative;
+}
+.question img{
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    bottom: -1px;
+}
+.question:hover{
+    color:rgb(152, 31, 152);
+}
+.answer{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--Grayishpurple);
+    display: none;
+}
+.attribution{
+    background-color: var(--Lightpink);
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 326px;
+        position: absolute;
+        padding: 10px;
+        background-color: var(--White);
+        border-radius: 18px;
+        top: 124px;
+        /* left: 416px; */
+        left: 10px;
+    }
+    .question p{
+        width: 240px;
+    }
+    .q1 img {
+        height: 25px;
+        position: absolute;
+        right: 20px;
+        bottom: 6px;
+        /* line-height: 25px; */
+        /* align-items: center; */
+    }
+    .q3 img {
+        height: 25px;
+        position: absolute;
+        right: 20px;
+        bottom: 4px;
+    }
+    .q2 img {
+        height: 25px;
+        position: absolute;
+        right: 20px;
+        bottom: -4px;
+    }
+    .q4 img {
+        height: 25px;
+        position: absolute;
+        right: 20px;
+        bottom: 17px;
+    }
+  }
